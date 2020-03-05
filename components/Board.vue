@@ -88,6 +88,8 @@ $board-light: rgb(240, 240, 240);
 .square {
 
   background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   &.contains-black {
     background-image: url("~assets/pieces/black-pawn.svg");
