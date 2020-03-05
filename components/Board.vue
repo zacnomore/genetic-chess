@@ -30,7 +30,7 @@ export default Vue.component('board', {
 </script>
 
 <style lang="scss" scoped>
-$board-dark: rgb(20, 20, 20);
+$board-dark: rgb(40, 40, 40);
 $board-light: rgb(240, 240, 240);
 
 .board-container {
