@@ -5,6 +5,7 @@
   "author": "Zachary Svoboda",
   "private": true,
   "scripts": {
+    "develop": "npm run dev",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
