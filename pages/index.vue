@@ -1,7 +1,10 @@
 <template>
   <div class="container">
-    <div class="board-area">
-      <board />
+    <div class="board-set" :style="gridStyle">
+      <board
+        v-for="boardCount in numBoards"
+        :key="boardCount"
+      />
     </div>
   </div>
 </template>
@@ -12,28 +15,34 @@ import Board from '~/components/Board'
 export default {
   components: {
     Board
+  },
+  data () {
+    return {
+      numBoards: 16
+    }
+  },
+  computed: {
+    gridStyle () {
+      const cols = Math.floor(Math.sqrt(this.numBoards))
+      return `grid-template-columns: repeat(${cols}, 1fr)`
+    }
   }
 }
 </script>
 
 <style scoped>
 .container {
-  margin: 0 auto;
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-.board-area {
-  width: 80%;
-}
+.board-set {
+  width: 80vw;
+  display: grid;
+  gap: 10px;
 
-@media screen and (min-width: 800px){
-  .board-area {
-    width: 40%;
-  }
 }
-
 </style>
