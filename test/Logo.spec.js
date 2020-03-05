@@ -1,9 +1,9 @@
 import { mount } from '@vue/test-utils'
-import Logo from '@/components/Logo.vue'
+import Board from '@/components/Board.vue'
 
-describe('Logo', () => {
+describe('Board', () => {
   test('is a Vue instance', () => {
-    const wrapper = mount(Logo)
+    const wrapper = mount(Board)
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 })
