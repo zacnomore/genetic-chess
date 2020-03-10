@@ -22,6 +22,8 @@
     }
   },
   "dependencies": {
+    "chess.js": "^0.10.3",
+    "geneticalgorithm": "^1.0.2",
     "nuxt": "^2.11.0"
   },
   "devDependencies": {
@@ -29,13 +31,14 @@
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/stylelint-module": "^3.1.0",
+    "@types/chess.js": "^0.10.0",
     "@vue/test-utils": "^1.0.0-beta.27",
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.1.0",
     "babel-jest": "^25.1.0",
     "eslint": "^6.1.0",
     "eslint-plugin-nuxt": ">=0.4.2",
     "husky": "^4.0.0",
-    "jest": "^25.1.0",
+    "jest": "^24.1.0",
     "lint-staged": "^10.0.0",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
